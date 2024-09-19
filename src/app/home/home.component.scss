@@ -1,0 +1,75 @@
+$primary-color: #007bff;  // Color del botón
+$primary-hover-color: #0056b3;
+$background-color: #0b3954;  // Azul oscuro para el fondo
+$text-color: #ffffff;  // Blanco para el texto
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;  // Ocupar toda la altura de la ventana
+  width: 100vw;   // Ocupar todo el ancho de la ventana
+  background-color: $background-color;  // Color de fondo oscuro
+  color: $text-color;  // Color de texto blanco
+  text-align: center;
+  padding: 20px;
+}
+
+.logo img {
+  width: 180px;  // Ajustar el tamaño del logo
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 28px;  // Tamaño más grande para el texto principal
+  margin-bottom: 30px;
+  color: $text-color;
+}
+
+.identificacion-selector {
+  margin-bottom: 30px;
+
+  select {
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 300px;  // Ancho máximo del selector
+    color: $text-color;
+    background-color: $background-color;
+    border: 1px solid $text-color;  // Borde blanco para el selector
+  }
+}
+
+button {
+  padding: 15px 40px;
+  font-size: 20px;
+  color: #fff;
+  background-color: $primary-color;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: $primary-hover-color;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 22px;  // Ajuste para pantallas pequeñas
+  }
+
+  button {
+    padding: 12px 30px;  // Botón más pequeño en dispositivos móviles
+    font-size: 18px;
+  }
+
+  .identificacion-selector select {
+    font-size: 16px;
+    width: 100%;  // Selector ocupa todo el ancho en pantallas pequeñas
+  }
+}

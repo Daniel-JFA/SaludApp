@@ -1,0 +1,63 @@
+$primary-color: #007bff;  // Color del botón
+$primary-hover-color: #0056b3;
+$background-color: #5a84b1;  // Azul claro como en la imagen
+$text-color: #080808;  // Texto blanco
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;  // Ocupar toda la altura de la ventana
+  width: 100vw;   // Ocupar todo el ancho de la ventana
+  background-color: $background-color;  // Fondo azul claro
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: $text-color;
+  text-transform: uppercase;  // Poner el texto en mayúsculas
+}
+
+// Estilos para el selector y el input de identificación
+.identificacion-selector, .identificacion-input {
+  width: 100%;
+  max-width: 400px;  // Limitar el ancho máximo de los inputs
+  margin-bottom: 15px;
+
+  select, input {
+    width: 100%;  // Que ocupen todo el ancho posible
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);  // Fondo semi-transparente
+    color: $text-color;
+    text-align: center;
+  }
+
+  select {
+    appearance: none;  // Quitar el estilo por defecto del select en algunos navegadores
+  }
+}
+
+// Botón Siguiente
+button {
+  width: 100%;
+  max-width: 400px;  // Misma anchura que los campos anteriores
+  padding: 15px 0;
+  font-size: 18px;
+  color: $text-color;
+  background-color: $primary-color;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $primary-hover-color;
+  }
+}

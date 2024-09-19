@@ -1,14 +1,15 @@
-html, body {
-  height: 100%;
-  margin: 0;
-  font-family: Arial, sans-serif;
+.signos-vitales-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  text-align: center;
 }
 
-h2, p {
-  text-align: center;
+.signos-display p {
+  font-size: 24px;
+  margin: 10px 0;
 }
 
 button {
@@ -19,18 +20,8 @@ button {
   border-radius: 5px;
   cursor: pointer;
   font-size: 18px;
-  margin-top: 20px;
 }
 
 button:hover {
   background-color: #0056b3;
-}
-
-.container {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
 }

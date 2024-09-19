@@ -1,1 +1,46 @@
-/* You can add global styles to this file, and also import other style files */
+// Variables
+$primary-color: #007bff;
+$primary-hover-color: #0056b3;
+$font-family: 'Arial, sans-serif';
+$button-padding: 15px 30px;
+$font-size-large: 18px;
+
+// Estilos globales
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: $font-family;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2, p {
+  text-align: center;
+}
+
+// Botones reutilizables
+button {
+  padding: $button-padding;
+  background-color: $primary-color;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: $font-size-large;
+  margin-top: 20px;
+  
+  &:hover {
+    background-color: $primary-hover-color;
+  }
+}
+
+// Contenedor flexible
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}

@@ -1,0 +1,19 @@
+<div class="home-container">
+    <h2>Selecciona el tipo de identificación</h2>
+    
+    <div class="identificacion-selector">
+        <select>
+            <option value="" disabled selected>Selecciona el tipo de identificación</option>
+            <option value="dni">DNI</option>
+            <option value="pasaporte">Pasaporte</option>
+            <option value="cedula">Cédula</option>
+        </select>
+    </div>
+    
+    <h2>Acerca tu documento al lector</h2>
+    <div class="identificacion-input">
+        <input type="text" placeholder="Ingresa tu número de identificación" />
+    </div>
+
+    <button (click)="goToPeso()">Siguiente</button>
+</div>
