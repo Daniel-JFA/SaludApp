@@ -1,7 +1,7 @@
 $primary-color: #007bff;  // Color del botón
 $primary-hover-color: #0056b3;
-$background-color: #5a84b1;  // Azul claro como en la imagen
-$text-color: #080808;  // Texto blanco
+$background-color: #4a84c6;  // Azul claro como en la imagen
+$text-color: #ffffff;  // Texto blanco
 
 .home-container {
   display: flex;
@@ -25,14 +25,13 @@ h2 {
 // Estilos para el selector y el input de identificación
 .identificacion-selector, .identificacion-input {
   width: 100%;
-  max-width: 400px;  // Limitar el ancho máximo de los inputs
   margin-bottom: 15px;
+  margin-top: 15px;
 
-  select, input {
+  input {
     width: 100%;  // Que ocupen todo el ancho posible
-    padding: 12px;
-    font-size: 16px;
-    border-radius: 5px;
+    padding: 15px 0px;
+    font-size: 1.2em;
     border: none;
     background-color: rgba(255, 255, 255, 0.2);  // Fondo semi-transparente
     color: $text-color;
@@ -47,13 +46,8 @@ h2 {
 // Botón Siguiente
 button {
   width: 100%;
-  max-width: 400px;  // Misma anchura que los campos anteriores
   padding: 15px 0;
-  font-size: 18px;
-  color: $text-color;
-  background-color: $primary-color;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
   text-transform: uppercase;
 

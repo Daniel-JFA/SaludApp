@@ -1,6 +1,6 @@
-$primary-color: #007bff;  // Color del botón
+$primary-color: #297ec4;  // Color del botón
 $primary-hover-color: #0056b3;
-$background-color: #0b3954;  // Azul oscuro para el fondo
+$background-color: #4a84c6;  // Azul oscuro para el fondo
 $text-color: #ffffff;  // Blanco para el texto
 
 .home-container {
@@ -22,7 +22,6 @@ $text-color: #ffffff;  // Blanco para el texto
 }
 
 h2 {
-  font-size: 28px;  // Tamaño más grande para el texto principal
   margin-bottom: 30px;
   color: $text-color;
 }
@@ -45,7 +44,6 @@ h2 {
 
 button {
   padding: 15px 40px;
-  font-size: 20px;
   color: #fff;
   background-color: $primary-color;
   border: none;

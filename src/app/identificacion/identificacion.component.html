@@ -1,19 +1,18 @@
-<div class="home-container">
-    <h2>Selecciona el tipo de identificación</h2>
-    
-    <div class="identificacion-selector">
-        <select>
-            <option value="" disabled selected>Selecciona el tipo de identificación</option>
-            <option value="dni">DNI</option>
-            <option value="pasaporte">Pasaporte</option>
-            <option value="cedula">Cédula</option>
-        </select>
+<div class="home-container">    
+    <div class="sidebar-box">
+        <div class="selector-container">
+            <select>
+                <option value="" disabled selected>Selecciona el tipo de identificación</option>
+                <option value="dni">DNI</option>
+                <option value="pasaporte">Pasaporte</option>
+                <option value="cedula">Cédula</option>
+            </select>
+        </div>
+        
+        <div class="identificacion-input">
+            <input type="text" placeholder="Ingresa tu número de identificación" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" maxlength="10" />
+        </div>
+        
+        <button (click)="goToPeso()" class="btn-next"><b>Siguiente</b></button>
     </div>
-    
-    <h2>Acerca tu documento al lector</h2>
-    <div class="identificacion-input">
-        <input type="text" placeholder="Ingresa tu número de identificación" />
-    </div>
-
-    <button (click)="goToPeso()">Siguiente</button>
 </div>
