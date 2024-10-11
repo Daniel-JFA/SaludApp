@@ -6,8 +6,9 @@ import { Router } from '@angular/router';
   standalone: true,
   imports: [],
   templateUrl: './temperatura.component.html',
-  styleUrl: './temperatura.component.scss'
+  styleUrls: ['./temperatura.component.scss']
 })
+
 export class TemperaturaComponent {
    constructor(private router: Router) {}
 goToSignosVitales() {
